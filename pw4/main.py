@@ -1,7 +1,9 @@
 from domains.school import School
 from output import Output 
 from input import Input
+
 if __name__ == "__main__":
+        school = School()
         while True:
             print("""
             =============================
@@ -18,14 +20,14 @@ if __name__ == "__main__":
                 print("\nExit program ...")
                 break
             elif option == 1:
-                Input.input_students(school)
+                school.input_students()
             elif option == 2:
-                Input.input_courses(school)
+                school.input_courses()
             elif option == 3:
-                Input.input_marks(school)
+                school.input_marks()
             elif option == 4:
-                Output.list_students(school)
+                school.list_students()
             elif option == 5:
-                Output.list_courses(school)
+                school.list_courses()
             else:
                 print("Invalid Option\n")

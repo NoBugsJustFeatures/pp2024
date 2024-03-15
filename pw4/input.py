@@ -1,3 +1,6 @@
+from domains.student import Student
+from domains.course import Course
+
 class Input:
     def input_students(school):
             num_students = int(input("Enter the number of students: "))
